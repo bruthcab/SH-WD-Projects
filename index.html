@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- for mobile responsiveness, you need this meta tag -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsiveness Example</title>
+    <!-- this link tag displays a little icon in the tab of your 
+        active browser window. It's called a "favicon"
+        (favorite icon)-->
+    <link rel="icon" type="image/gif" href="./favicon.gif">
+    <!-- this is the external stylesheet that contains
+        the @media screen breakpoint rules
+    -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Mobile Responsiveness Example</h1>
+        <h2 style="text-align: center;" id="deviceName"></h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Section 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit
+            </p>
+            <p>Examples of funny lorem ipsum generators :
+                <a href="https://designshack.net/articles/inspiration/30-useful-and-hilarious-lorem-ipsum-generators/">here</a>
+            </p>
+        </section>
+    </main>
+    <!-- hint: I can place a script tag here to load an
+        external javascript file as well as place it in the
+        head tags. Placing it here ensure that all the elements
+        of my web page are rendered first, so that the javascript
+        code can recognize the elenents above the closed body
+        tag :) -->
+    <script src="./assets/device.js">
+    </script>
+</body>
+</html>
